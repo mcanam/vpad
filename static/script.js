@@ -86,7 +86,7 @@ const thumbstickRight = nipplejs.create({
     position: { left: '50%', top: '50%' },
 });
 
-function getThumbstictPosition(data) {
+function getThumbstickPosition(data) {
     const angleDeg = data.angle.degree;
     const force = Math.min(data.force, 1);
     const angleRad = angleDeg * Math.PI / 180;
@@ -100,7 +100,7 @@ function getThumbstictPosition(data) {
 }
 
 thumbstickLeft.on('move', (_, data) => {
-    const { x, y } = getThumbstictPosition(data);
+    const { x, y } = getThumbstickPosition(data);
 
     stateData.abs_x = x;
     stateData.abs_y = y;
@@ -109,7 +109,7 @@ thumbstickLeft.on('move', (_, data) => {
 });
 
 thumbstickRight.on('move', (_, data) => {
-    const { x, y } = getThumbstictPosition(data);
+    const { x, y } = getThumbstickPosition(data);
 
     stateData.abs_rx = x;
     stateData.abs_ry = y;
