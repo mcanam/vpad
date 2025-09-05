@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+button {
+    font: inherit;
+    font-weight: bold;
+    color: inherit;
+    border: 1px solid #fff;
+    outline: none;
+    user-select: none;
+    background: none;
+}
+
+.start-container {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-button {
+    padding: 10px 20px;
+}
+
+.button {
+    font-size: 1.4em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.button-active {
+    background-color: #fff;
+    color: #000;
+}
+
+.button-container {
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.button-menu {
+    padding: 8px 16px;
+    font-size: 0.8em;
+}
+
+.button-trigger {
+    padding: 8px 16px;
+    font-size: 0.8em;
+}
+
+.button-trigger-container {
+    position: absolute;
+    top: 20px;
+}
+
+.button-trigger-container-left {
+    left: 40px;
+}
+
+.button-trigger-container-right {
+    right: 40px;
+}
+
+.button-menu-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.button-dpad-container {
+    left: 60px;
+    bottom: 80px;
+}
+
+.button-action-container {
+    right: 60px;
+    bottom: 90px;
+}
+
+.thumbstick-container {
+    position: relative;
+}

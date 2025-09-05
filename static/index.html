@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>vpad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="start-container">
+        <button class="start-button">START</button>
+    </div>
+
+    <div class="button-trigger-container button-trigger-container-left">
+        <button class="button-trigger" data-key="btn_tl">LB</button>
+        <button class="button-trigger" data-key="abs_z">LT</button>
+    </div>
+
+    <div class="button-trigger-container button-trigger-container-right">
+        <button class="button-trigger" data-key="btn_tr">RB</button>
+        <button class="button-trigger" data-key="abs_rz">RT</button>
+    </div>
+
+    <div class="button-container button-dpad-container">
+        <button class="button" data-key="btn_dpad_up">U</button>
+        <div class="button-wrapper">
+            <button class="button" data-key="btn_dpad_left">L</button>
+            <div class="thumbstick-container thumbstick-container-left"></div>
+            <button class="button" data-key="btn_dpad_right">R</button>
+        </div>
+        <button class="button" data-key="btn_dpad_down">D</button>
+    </div>
+
+    <div class="button-menu-container">
+        <button class="button-menu" data-key="btn_select">BACK</button>
+        <button class="button-menu" data-key="btn_start">START</button>
+    </div>
+
+    <div class="button-container button-action-container">
+        <button class="button" data-key="btn_y">Y</button>
+        <div class="button-wrapper">
+            <button class="button" data-key="btn_x">X</button>
+            <div class="thumbstick-container thumbstick-container-right"></div>
+            <button class="button" data-key="btn_b">B</button>
+        </div>
+        <button class="button" data-key="btn_a">A</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/nipplejs@0.10.2/dist/nipplejs.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
